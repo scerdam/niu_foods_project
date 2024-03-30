@@ -8,6 +8,7 @@ class RetrieveDeviceStatusJob
       device.update(status: current_status, last_updated_at: Time.current)
     end
     p 'Devices polled and updated!'
+    UpdateRestaurantStatusJob.new.perform
   end
 
   private
