@@ -1,0 +1,6 @@
+:concurrency: 1
+:scheduler:
+  :schedule:
+    retrieve_device_status_job:
+      every: 30 seconds
+      class: RetrieveDeviceStatusJob
