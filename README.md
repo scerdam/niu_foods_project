@@ -1,24 +1,41 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
 
-Things you may want to cover:
+This project use **ruby "3.2.2"**
 
-* Ruby version
+If you use rvm you can install it with:
 
-* System dependencies
+```bash
+rvm install "ruby-3.2.2"
+```
 
-* Configuration
+Then, run:
 
-* Database creation
+```bash
+bundle install
+```
 
-* Database initialization
+For create and poblate SQLite DB, run:
+```bash
+rails db:setup
+```
 
-* How to run the test suite
+Now yo can run the app with
+```bash
+rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+**For background jobs**
 
-* Deployment instructions
+If you do not have redis, install by consulting: https://redis.io/docs/install/install-redis/install-redis-on-linux/
 
-* ...
+Run Redis for use Sidekiq
+```bash
+redis-server
+```
+
+Finally run sidekiq
+```bash
+bundle exec sidekiq
+```
+
