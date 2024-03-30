@@ -14,11 +14,11 @@ class UpdateRestaurantStatusJob
 
   def calculate_restaurant_status(restaurant)
     if restaurant.devices.all? { |device| device.status == 'error' }
-      'error'
+      :error
     elsif restaurant.devices.all? { |device| device.status == 'ok' }
-      'ok'
+      :ok
     else
-      'warning'
+      :warning
     end
   end
 end
