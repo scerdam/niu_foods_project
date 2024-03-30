@@ -1,4 +1,6 @@
 
+![alt text](https://github.com/scerdam/niu_foods_project/blob/main/Screenshot%202024-03-30%20at%2015.07.18.png?raw=true)
+
 ## Installation
 
 This project use **ruby "3.2.2"**
