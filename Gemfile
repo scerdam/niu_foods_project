@@ -75,3 +75,4 @@ gem "bootstrap"
 
 gem "sassc-rails"
 gem "sidekiq", "~> 7.2"
+gem "sidekiq-scheduler"
