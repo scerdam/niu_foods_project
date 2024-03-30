@@ -1,5 +1,5 @@
-Restaurant.create(name: 'Niu Sushi MidMall Maipu', status: 'OK', last_updated_at: Time.current)
-Restaurant.create(name: 'Niu Sushi Pajaritos - Arauco Maipu', status: 'Error', last_updated_at: Time.current)
+Restaurant.create(name: 'Niu Sushi MidMall Maipu', status: 'ok', last_updated_at: Time.current)
+Restaurant.create(name: 'Niu Sushi Pajaritos - Arauco Maipu', status: 'ok', last_updated_at: Time.current)
 
 Restaurant.all.each do |restaurant|
   Device.create!([
@@ -9,7 +9,7 @@ Restaurant.all.each do |restaurant|
   ].map{ |name|
     {
       name: name,
-      status: 'OK',
+      status: 'ok',
       last_updated_at: Time.current,
       is_central: false,
       restaurant_id: restaurant.id
