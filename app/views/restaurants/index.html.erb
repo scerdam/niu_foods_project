@@ -4,11 +4,16 @@
   <% @restaurants.each do |restaurant| %>
     <div class="card mb-3">
       <div class="card-body">
-        <h5 class="card-title"><%= restaurant.name %></h5>
+        <h5 class="card-title fw-bold"><%= restaurant.name %></h5>
         <p class="card-text"><strong>Status:</strong>
           <span class="badge rounded-pill bg-primary"><%= restaurant.status %></span>
         </p>
         <p class="card-text"><strong>Last_updated:</strong> <%= restaurant.last_updated_at %></p>
+        <ul class="list-group">
+          <% restaurant.devices.each do |device| %>
+            <li class="list-group-item"><%= device.name %> - <%= device.status %> - <%= device.last_updated_at %></li>
+          <% end %>
+        </ul>
       </div>
     </div>
   <% end %>
