@@ -7,3 +7,6 @@
     update_restaurant_status_job:
       every: 30 seconds
       class: UpdateRestaurantStatusJob
+    send_report_to_central_server_job:
+      every: 30 seconds
+      class: SendReportToCentralServerJob
