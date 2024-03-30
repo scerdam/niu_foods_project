@@ -4,3 +4,6 @@
     retrieve_device_status_job:
       every: 30 seconds
       class: RetrieveDeviceStatusJob
+    update_restaurant_status_job:
+      every: 30 seconds
+      class: UpdateRestaurantStatusJob
